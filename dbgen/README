@@ -29,7 +29,7 @@ Same idea as TPCH dbgen setup, which requires user to create an
 appropriate makefile, using makefile.suite as a basis. Make sure to
 use "SSBM" for the workload variable. 
 
-Type "make" to compile and to generate the SSBM dbgen executable. 
+Type "make dbgen" to compile and to generate the SSBM dbgen executable. 
 Please refer to Porting.Notes for more details and for
 suggested compile time options.
 

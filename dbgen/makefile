@@ -6,10 +6,10 @@ CC      = gcc
 # Current values for DATABASE are: INFORMIX, DB2, TDAT (Teradata)
 #                                  SQLSERVER, SYBASE
 # Current values for MACHINE are:  ATT, DOS, HP, IBM, ICL, MVS, 
-#                                  SGI, SUN, U2200, VMS, LINUX
+#                                  SGI, SUN, U2200, VMS, LINUX, OSX
 # Current values for WORKLOAD are:  SSBM, TPCH, TPCR
 DATABASE=DB2 
-MACHINE =LINUX 
+MACHINE =OSX 
 WORKLOAD =SSBM 
 #
 # add -EDTERABYTE if orderkey will execeed 32 bits (SF >= 300)
