@@ -272,6 +272,7 @@ EXTERN int  step;
 EXTERN int	set_seeds;
 EXTERN int  validate;
 EXTERN char *d_path;
+EXTERN int  zstdout;
 
 /* added for segmented updates */
 EXTERN int insert_segments;

@@ -697,7 +697,7 @@ process_options (int count, char **vector)
 	int option;
 	
 	while ((option = getopt (count, vector,
-		"b:C:Dd:Ffi:hn:O:P:qr:s:S:T:U:v")) != -1)
+		"b:C:Dd:Ffi:hn:O:P:qr:s:S:T:U:v:z")) != -1)
 	switch (option)
 		{
 		case 'b':				/* load distributions from named file */
@@ -719,6 +719,9 @@ process_options (int count, char **vector)
 		  break;
 	  case 'v':				/* life noises enabled */
 		  verbose = 1;
+		  break;
+	  case 'z':				/* output to stdout vs file */
+		  zstdout = 1;
 		  break;
 	  case 'f':				/* blind overwrites; Force */
 		  force = 1;
