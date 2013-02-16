@@ -697,7 +697,7 @@ process_options (int count, char **vector)
 	int option;
 	
 	while ((option = getopt (count, vector,
-		"b:C:Dd:Ffi:hn:O:P:qr:s:S:T:U:v:z")) != -1)
+		"b:C:Dd:Ffi:hn:O:P:qr:s:S:T:U:vz")) != -1)
 	switch (option)
 		{
 		case 'b':				/* load distributions from named file */
