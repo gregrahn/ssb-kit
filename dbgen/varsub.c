@@ -1,4 +1,5 @@
 /* Sccsid:     @(#)varsub.c	2.1.8.3 */
+#include "config.h"
 #include <stdio.h>
 #ifndef _POSIX_SOURCE
 #include <malloc.h>
@@ -9,7 +10,6 @@
 #endif
 #endif /* WIN32 */
 #include <string.h>
-#include "config.h"
 #include "dss.h"
 #include "tpcd.h"
 #ifdef ADHOC

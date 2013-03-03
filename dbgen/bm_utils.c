@@ -25,7 +25,7 @@
 /* O_LARGEFILE is defined in fcntl.h*/
 #define _GNU_SOURCE
 #endif
-
+#include "config.h"
 #include "dss.h"
 #include <stdio.h>
 #include <time.h>
