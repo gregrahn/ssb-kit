@@ -2,7 +2,7 @@ SELECT
   SUM(lo_extendedprice * lo_discount) AS revenue
 FROM 
   lineorder,
-  dwdate
+  dim_date
 WHERE 
   lo_orderdate = d_datekey
   AND d_weeknuminyear = 6

@@ -4,7 +4,7 @@ SELECT
   p_brand1
 FROM 
   lineorder,
-  dwdate,
+  dim_date,
   part,
   supplier
 WHERE 

@@ -4,7 +4,7 @@ SELECT
   p_brand1,
   SUM(lo_revenue - lo_supplycost) AS profit
 FROM 
-  dwdate,
+  dim_date,
   customer,
   supplier,
   part,

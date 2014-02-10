@@ -7,7 +7,7 @@ FROM
   customer,
   lineorder,
   supplier,
-  dwdate
+  dim_date
 WHERE 
   lo_custkey = c_custkey
   AND lo_suppkey = s_suppkey

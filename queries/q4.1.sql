@@ -3,7 +3,7 @@ SELECT
   c_nation,
   SUM(lo_revenue - lo_supplycost) AS profit
 FROM 
-  dwdate,
+  dim_date,
   customer,
   supplier,
   part,
