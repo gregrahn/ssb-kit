@@ -1,4 +1,4 @@
-/* 
+/*
  *  Sccsid:     @(#)bcd2.h	2.1.8.1
  */
 int bin_bcd2(long binary, long *low_res, long *high_res);
