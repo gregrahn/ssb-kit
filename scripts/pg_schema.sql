@@ -15,7 +15,8 @@ create table dim_date (
   d_lastdayinweekfl  integer     not null,
   d_lastdayinmonthfl integer     not null,
   d_holidayfl        integer     not null,
-  d_weekdayfl        integer     not null
+  d_weekdayfl        integer     not null,
+  primary key (d_datekey)
 );
 
 create table customer (
@@ -26,7 +27,8 @@ create table customer (
   c_nation        varchar(15) not null,
   c_region        varchar(12) not null,
   c_phone         varchar(15) not null,
-  c_mktsegment    varchar(10) not null
+  c_mktsegment    varchar(10) not null,
+  primary key (c_custkey)
 );
 
 create table part (
@@ -38,7 +40,8 @@ create table part (
   p_color         varchar(11) not null,
   p_type          varchar(25) not null,
   p_size          integer     not null,
-  p_container     varchar(10) not null
+  p_container     varchar(10) not null,
+  primary key (p_partkey)
 );
 
 create table supplier (
@@ -48,12 +51,13 @@ create table supplier (
   s_city          varchar(10) not null,
   s_nation        varchar(15) not null,
   s_region        varchar(12) not null,
-  s_phone         varchar(15) not null
+  s_phone         varchar(15) not null,
+  primary key (s_suppkey)
 );
 
 create table lineorder (
   lo_orderkey        integer     not null,
-  lo_linenumber      integer     not null, 
+  lo_linenumber      integer     not null,
   lo_custkey         integer     not null, -- fk c_custkey
   lo_partkey         integer     not null, -- fk p_partkey
   lo_suppkey         integer     not null, -- fk s_suppkey
@@ -68,5 +72,6 @@ create table lineorder (
   lo_supplycost      integer     not null,
   lo_tax             integer     not null,
   lo_commitdate      integer     not null, -- fk d_datekey
-  lo_shipmode        varchar(10) not null
+  lo_shipmode        varchar(10) not null,
+  primary key (lo_orderkey, lo_linenumber)
 );
