@@ -1,5 +1,5 @@
 SELECT 
-	SUM(lo_extendedprice * lo_discount) AS revenue
+  SUM(lo_extendedprice * lo_discount) AS revenue
 FROM 
   lineorder,
   dim_date
